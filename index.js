@@ -4,7 +4,7 @@ const form = document.getElementById("mainForm");
 
 let allAnwers = [];
 
-fetch("https://shouldyoudoit.herokuapp.com/allhgj").then((res) => {
+fetch("https://shouldyoudoit.herokuapp.com/all").then((res) => {
 
     if (!res.ok) {
         throw new Error('Network response was not ok');
