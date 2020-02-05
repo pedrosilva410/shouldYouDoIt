@@ -1,0 +1,131 @@
+/* ---resets and others---- */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
+:root {
+    --darkest: #0A2F51;
+    --second_dark: #0E4D64;
+    --third_dark: #137177;
+    --fourth_dark: #188977;
+    --middle_color: #1D9A6C;
+    --sixth_light: #39A96B;
+    --fifth_light: #56B870;
+    --fourth_light: #74C67A;
+    --third_light: #99D492;
+    --second_light: #BFE1B0;
+    --lightest: #DEEDCF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* ----------header-------- */
+
+header {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--second_dark);
+}
+
+.headerTitle {
+    display: flex;
+}
+
+.headerTitle1 {
+    padding-right: 5px;
+    color: var(--fourth_light);
+    padding-bottom: 5px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.headerTitle2 {
+    font-weight: bold;
+    color: var(--second_light);
+    font-size: 40px;
+}
+
+.nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.option2 {
+    color: var(--second_light);
+    border-bottom: 3px solid var(--fourth_light);
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.option1 {
+    padding-right: 15px;
+    color: var(--second_light);
+}
+
+
+/* ----------main---------- */
+
+main {
+    height: 7000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--darkest);
+}
+
+.mainTitle {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-size: 50px;
+    color: var(--fifth_light);
+}
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.twoImages {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* --------footer--------- */
+
+footer {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkest);
+}
+
+.footerText {
+    color: var(--lightest);
+}
